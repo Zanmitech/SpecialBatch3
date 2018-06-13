@@ -1,0 +1,49 @@
+In order to Run TestNG tests in suite level like from testng.xml,
+We need Surefire plugin example;
+
+  <build>
+	  <plugins>
+	      <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-surefire-plugin</artifactId>
+	        <version>2.21.0</version>
+	        <configuration>
+	          <suiteXmlFiles>
+	            <suiteXmlFile>testng.xml</suiteXmlFile>
+	          </suiteXmlFiles>
+	        </configuration>
+	      </plugin>
+	      
+	      
+		</plugins>
+	</build>
+	
+	
+After this we cant run the tests you are getting below error  "No compiler is provided in this environment. Perhaps you are running on a JRE rather than a JDK?"
+To fix this we need to do 2 things as below
+
+1. we need to add Maven-Compiler 
+
+
+	<plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.7.0</version>
+          <configuration>
+            <!-- put your configurations here -->
+          </configuration>
+     </plugin>
+     
+     
+ 2. Still if it is throwing error "no compiler is provided in this environment" then point ur installed JRE to JDk as below:
+ 
+ If you are running Maven from your IDE you must check that your environment is using a JDK rather than a JRE. Below how to perform the check:
+
+	--> Open your Eclipse, click on Windows -> Preferences -> Java -> Installed JREs
+	--> Verify that the checked JRE refers to a JDK : Select the checked JRE and click Edit… and change the path to the JDK home
+	--> Apply and click ok
+	
+	Note: Refer this url --> http://roufid.com/no-compiler-is-provided-in-this-environment/
+ 
+ 
+
