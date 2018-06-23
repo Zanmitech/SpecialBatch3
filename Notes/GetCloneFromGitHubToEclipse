@@ -4,4 +4,6 @@
 4. Click Next --> Go with Master branch --> Next
 5. Choose the path in the local to store the code from GItHub -- Next
 6. Go with "import existing eclipse project" --> Next
-7. 
+7. In the import project window click on finish
+
+Code is ready and copied to local and populated in eclipse 
