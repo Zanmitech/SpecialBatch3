@@ -1,0 +1,7 @@
+1. Go to file -- Import --> in the search type "Git"
+2. select project from git --> Clone URI
+3. Login to github and copy the repository url "https://github.com/Zanmitech/SpecialBatch3.git"
+4. Click Next --> Go with Master branch --> Next
+5. Choose the path in the local to store the code from GItHub -- Next
+6. Go with "import existing eclipse project" --> Next
+7. 
