@@ -9,7 +9,7 @@ public class Test_class2 {
 public void armstrong() {
 	int  temp1=0, sum=0;
 	Scanner scn = new Scanner(System.in);
-	System.out.print("Enter the number :");
+	System.out.print("Enter your number :");
 	String arm = scn.nextLine();
 	int n = Integer.parseInt(arm);
 	
