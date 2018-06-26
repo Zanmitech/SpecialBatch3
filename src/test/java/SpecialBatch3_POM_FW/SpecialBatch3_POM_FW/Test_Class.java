@@ -8,6 +8,5 @@ public class Test_Class
 	public void TestMethod1()
 	{
 		System.out.println("Hello first statement from Test_Class");
-		//hello
 	}
 }
