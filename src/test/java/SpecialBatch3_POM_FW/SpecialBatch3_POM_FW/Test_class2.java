@@ -8,7 +8,7 @@ public class Test_class2 {
 	public void TestMethod1()
 	{
 		System.out.println("Hello Second statement from Test_Class2");
-		System.out.println("Hello Test_Class2");
+		System.out.println("Hello Test_Class2 - from eclipse");
 		System.out.println("Done from Eclipse");
 		
 	}
