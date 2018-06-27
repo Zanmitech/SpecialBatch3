@@ -9,7 +9,7 @@ public class Test_Class2 {
 	{
 		System.out.println("Hello Second statement from Test_Class2");
 
-		System.out.println("Hello Test_Class2 - from github and from eclipse");
+		System.out.println("Hello Test_class2 - from github and from eclipse");
 
 		System.out.println("Done from Eclipse");
 		
