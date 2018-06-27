@@ -3,7 +3,7 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="SpecialBatch3_POM_FW.SpecialBatch3_POM_FW.Test_Class2"/>
+      <class name="SpecialBatch3_POM_FW.SpecialBatch3_POM_FW.Test_class2"/>
       <class name="SpecialBatch3_POM_FW.SpecialBatch3_POM_FW.Test_Class"/>
     </classes>
   </test> <!-- Test -->
