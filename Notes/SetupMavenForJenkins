@@ -1,0 +1,12 @@
+Login to jenkins
+
+1. In the Jenkins dashboard (Home screen), click Manage Jenkins from the left-hand side menu.
+2. click on ‘Configure System’ from the right hand side.
+3. In the Configure system screen, scroll down till you see the Maven section and then click on the ‘Add Maven’ button 
+	( if you not found in Configure system screen then go back and go to "Configure Global Security" screen)
+	like this: http://localhost:9090/configureTools/
+4. Uncheck the ‘Install automatically’ option.
+5. Add any name for the Name field  and the location "D:\software\apache-maven-3.5.0-bin\apache-maven-3.5.0" for the  MAVEN_HOME.
+6. Similarly you need to set the JDk path --> JDK = Java and  Java_Home = C:\Program Files\Java\jdk1.8.0_131
+7. Once you this re-start your jenkins ( you logout and restart the jenkins in cmd if you triggered the jenkins from cmd (jenkins.war))
+8. Now you will see the Maven Project when you try to create a job ( Jenkins home --> New item)

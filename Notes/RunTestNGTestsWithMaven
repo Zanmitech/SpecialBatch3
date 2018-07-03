@@ -45,7 +45,7 @@ To fix this we need to do 2 things as below
 	
 	Note: Refer this url --> http://roufid.com/no-compiler-is-provided-in-this-environment/
 	
-3. After fixing this problem then you navigate unit pom.xml is present in project path in cmd then trigger maven commands like mvn clean mvn compile mvn run etc..
+3. After fixing this problem then you navigate untill pom.xml is present in project path in cmd then trigger maven commands like mvn clean mvn compile mvn run etc..
  
  
 

@@ -1,0 +1,12 @@
+Pre-requistes: Jenkins should be configured
+
+Login to jenkins and create a new job: 
+
+1. Click on New Item
+2. Enter the name of the job and Select the Maven Project ( you should configure the maven in jenkins ) 
+   if not it is not list here to select Maven Project ( for Setting the Maven --> See SetupMavenForJenkins file)
+3. Proceed to next window of the job by clicking on OK
+4. Give the description of the job ( means what this jenkin plan is going to do )
+5. Under Source Code Management select GIT
+6. Copy the repository by logging into the github with your account and paste under "Repository URL" --> "https://github.com/Zanmitech/SpecialBatch3.git"
+7. 
