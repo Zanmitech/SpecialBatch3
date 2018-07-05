@@ -1,0 +1,61 @@
+1. download the war file (http://www.softpedia.com/get/Internet/Servers/Other-Servers/Jenkins.shtml#download)
+or
+https://updates.jenkins-ci.org/download/war/
+
+2. open cmd, go to the path of war file in cmd (E:\Ashok\Ashok_New\Softwares\Jenkins)
+3. run below command 
+	java -jar jenkins.war  (if it is not started then run "netstat -aon | findstr 8080" and check which process is using 8080 port and kill in the task manager or start jenkins in different port --httpPort=9090)
+4. wait for the message "Jenkins is up and running" ( here message maynot be displayed but it provides admin password) (e.g. C:\Users\ashok.nt\.jenkins\secrets\initialAdminPassword)
+
+Note: http://localhost:9090/configureTools/
+
+Note: admin/ password from above path
+
+5. Open the browser and naviagte to localhost:9090 (use the port in which jenkins is started)
+6. you will see the jenkins window
+7. In the left hand panel, click on Manage jenkins, then click on "install as windows service"
+8. That means when ever you start you PC Jenkins runs as window services every time. (you can see in services jenkins is runing when ur system is up)
+
+9. If you dont want to run as windows service then you can start manually how we started that in cmd in steps 3.
+10. Go to home page (naviagte to localhost:8080 in the browser)
+
+11. Click on "New Item" and select "build a free style software project"
+
+12. Name it in above text field (give project Name) (My Project-1) and click ok.
+
+13. you will see many option in next page
+
+14 you can integrate jenkings with ur source code management like "CVS, GIT, SVN etc"
+
+15 lets go with none
+
+16. Under build select "Execute windows batch command" and type "echo %Time%" in command field
+
+17. save it
+
+18. click on Back to dashboard, and select ur project and click on "Build Now"
+
+19. Click on the ur project, click on recent run link and click on console output.
+
+20. Now if you want run the build as particular time, to do this select conigure from ur project and goto Build Triggers then select "build periodically", 
+
+21. To click on the "?" option, (Minutes-Hours DayOfThemonth Month DayOfTheWeek) ( 0-0 5 * * *)
+
+22. Give the ur timing in the field eg (0-0 5 * * *) every day 5am 
+
+23. If the build fails then if you want to notify the peoples through mail then goto "post build Action" give the mail id in recipients, TODo this you need to do mail server setting in jenkins, Goto to Home,--> Manage Jenkins, in E-mail Notification give SMTP sever like Outlook or smtp.gmail.com, you need to Username and pwd, port, reply-To Address, and test the configuration by enabling check box "Test configuration by sending text mail" 
+
+24. How to run build.xml from jenkins.
+
+25. copy the path of build.xml of ur project .and goto jenkins, select ur project, right click and click on configure. Under build select "Invoke Ant"
+
+	1. Under Target, Mention the targets of build.xml which you need to run. (compile run)
+	2. Under Build File : Mention the path of the build file
+
+26. before step 25, you need to configure ant in ur system. 
+
+27. After 25th , Save ur project, goto dashboard, select ur project and build now. Under status you can see progress
+
+28. How to ur project from servers (GITHUB and GIT)
+
+27. In jenkins you install GIt and GITHUB plugin
